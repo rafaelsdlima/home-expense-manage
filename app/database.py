@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "sqlite:///./home_expense_manager.db"
+DATABASE_URL = "postgresql://postgres:123456@127.0.0.1:5432/expense_db"
 
 engine = create_engine(DATABASE_URL)
 
